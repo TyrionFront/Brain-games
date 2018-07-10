@@ -17,7 +17,7 @@ export default () => {
       console.log('Correct!');
       return game(newCount);
     }
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was ${value}.`);
     console.log(`Let's try again, ${actual}!`);
     return null;
   };
