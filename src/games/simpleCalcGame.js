@@ -1,37 +1,32 @@
 import readlineSync from 'readline-sync';
 
 const lvlsCount = 3;
-const getNumOrder = () => Math.floor(Math.random() * 3 + 1);
-const getRandomNum = () => Math.floor(Math.random() * 100 + 1);
+const getRandomNum = amplitude => Math.floor(Math.random() * amplitude + 1);
 const description = 'What is the result of the expression?\n';
-let question;
-let correctAnswer;
+const numAmplitude = 100;
+const calcAmplitude = 3;
+
 const getQuestionAnswer = () => {
-  const x = getRandomNum();
-  const y = getRandomNum();
-  switch (getNumOrder()) {
+  const [x, y] = [getRandomNum(numAmplitude), getRandomNum(numAmplitude)];
+  switch (getRandomNum(calcAmplitude)) {
     case 1:
-      question = `${x} + ${y}`;
-      correctAnswer = String(x + y);
-      break;
+      return [`${x} + ${y}`, String(x + y)];
     case 2:
-      question = `${x} - ${y}`;
-      correctAnswer = String(x - y);
-      break;
+      return [`${x} - ${y}`, String(x - y)];
     case 3:
-      question = `${x} * ${y}`;
-      correctAnswer = String(x * y);
-      break;
+      return [`${x} * ${y}`, String(x * y)];
     default:
       break;
   }
+  return null;
 };
+
 const makeGameLvl = (count, name) => {
   if (count === 0) {
     console.log(`Congratulations, ${name}!`);
     return;
   }
-  getQuestionAnswer();
+  const [question, correctAnswer] = getQuestionAnswer();
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   if (correctAnswer === answer) {
