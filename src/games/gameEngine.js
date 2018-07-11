@@ -21,7 +21,7 @@ const makeGameLvl = (count, name, getQuestionAnswer) => {
   console.log(`Let's try again, ${name}!`);
 };
 
-export const makeRandom = amplitude => Math.floor(Math.random() * amplitude + 1);
+export const makeRandom = (start, end = 1) => Math.floor(Math.random() * (start - end) + end);
 export const getRandomNum = () => makeRandom(numsAmplitude);
 
 export const makeGame = (description, questionAnswer) => {
