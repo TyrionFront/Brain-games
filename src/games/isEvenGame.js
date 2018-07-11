@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const lvlCount = 3;
+const lvlsCount = 3;
 const makeQuestion = () => Math.floor(Math.random() * 100 + 1);
 const isEven = number => number % 2 === 0;
 const makeAnswer = num => (isEven(num) ? 'yes' : 'no');
@@ -29,7 +29,7 @@ const makeGame = () => {
   console.log(description);
   const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
   console.log(`Hello, ${gamerName} !\n`);
-  return makeGameLvl(lvlCount, gamerName);
+  return makeGameLvl(lvlsCount, gamerName);
 };
 
 export default () => makeGame();
