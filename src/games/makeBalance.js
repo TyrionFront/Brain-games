@@ -18,8 +18,9 @@ const makeBalance = (number) => {
   return balancedNum;
 };
 
-const endLimit = 10000;
 const startLimit = 10;
+const endLimit = 10000;
+
 const makeQuestionAnswer = () => {
   const question = getRandomNum(endLimit, startLimit);
   return [question, makeBalance(question)];
