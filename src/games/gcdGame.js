@@ -1,6 +1,7 @@
-import { getRandomNum, makeGame } from './gameEngine';
+import makeGame from '../gameEngine';
+import getRandomNum from '../utils';
 
-const gcdDescription = 'Find the greatest common divisor of given numbers.\n';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const calcGcd = (a, b) => {
   if (b === 0) { return a; }
@@ -10,10 +11,10 @@ const calcGcd = (a, b) => {
   return calcGcd(newA, newB);
 };
 
-const makeQuestionAnswerGcd = () => {
+const makeQuestionAnswer = () => {
   const question = `${getRandomNum()} ${getRandomNum()}`;
   const [x, y] = question.split(' ');
   return [question, String(calcGcd(x, y))];
 };
 
-export default () => makeGame(gcdDescription, makeQuestionAnswerGcd);
+export default () => makeGame(description, makeQuestionAnswer);

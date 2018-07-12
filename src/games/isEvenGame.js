@@ -1,13 +1,14 @@
-import { getRandomNum, makeGame } from './gameEngine';
+import makeGame from '../gameEngine';
+import getRandomNum from '../utils';
 
-const isEvenDescription = 'Answer "yes" if number even otherwise answer "no".\n';
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const isEven = number => number % 2 === 0;
 const makeAnswer = num => (isEven(num) ? 'yes' : 'no');
 
-const makeQuestionAnswerEven = () => {
+const makeQuestionAnswer = () => {
   const question = getRandomNum();
   return [question, makeAnswer(question)];
 };
 
-export default () => makeGame(isEvenDescription, makeQuestionAnswerEven);
+export default () => makeGame(description, makeQuestionAnswer);

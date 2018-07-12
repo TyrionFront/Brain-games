@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const lvlsCount = 3;
-const numsAmplitude = 100;
+const levelsCount = 3;
 
 const makeGameLvl = (count, name, getQuestionAnswer) => {
   if (count === 0) {
@@ -21,13 +20,12 @@ const makeGameLvl = (count, name, getQuestionAnswer) => {
   console.log(`Let's try again, ${name}!`);
 };
 
-export const makeRandom = (start, end = 1) => Math.floor(Math.random() * (start - end) + end);
-export const getRandomNum = () => makeRandom(numsAmplitude);
-
-export const makeGame = (description, questionAnswer) => {
+const makeGame = (description, questionAnswer) => {
   console.log('Welcome to the Brain Games!');
-  console.log(description);
+  console.log(`${description}\n`);
   const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
   console.log(`Hello, ${gamerName} !\n`);
-  return makeGameLvl(lvlsCount, gamerName, questionAnswer);
+  return makeGameLvl(levelsCount, gamerName, questionAnswer);
 };
+
+export default makeGame;

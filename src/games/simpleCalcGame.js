@@ -1,11 +1,12 @@
-import { getRandomNum, makeRandom, makeGame } from './gameEngine';
+import makeGame from '../gameEngine';
+import getRandomNum from '../utils';
 
-const calcDescription = 'What is the result of the expression?\n';
+const description = 'What is the result of the expression?';
 const calcAmplitude = 3;
 
-const makeQuestionAnswerCalc = () => {
+const makeQuestionAnswer = () => {
   const [x, y] = [getRandomNum(), getRandomNum()];
-  switch (makeRandom(calcAmplitude)) {
+  switch (getRandomNum(calcAmplitude)) {
     case 1:
       return [`${x} + ${y}`, String(x + y)];
     case 2:
@@ -18,4 +19,4 @@ const makeQuestionAnswerCalc = () => {
   return null;
 };
 
-export default () => makeGame(calcDescription, makeQuestionAnswerCalc);
+export default () => makeGame(description, makeQuestionAnswer);
