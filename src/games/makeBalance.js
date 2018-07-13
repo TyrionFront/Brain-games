@@ -22,7 +22,7 @@ const startLimit = 10;
 const endLimit = 10000;
 
 const makeQuestionAnswer = () => {
-  const question = getRandomNum(endLimit, startLimit);
+  const question = getRandomNum(startLimit, endLimit);
   return [question, makeBalance(question)];
 };
 
