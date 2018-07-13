@@ -2,10 +2,9 @@ import readlineSync from 'readline-sync';
 
 const levelsCount = 3;
 
-const makeGameLvl = (count, name, getQuestionAnswer) => {
+const makeGameLvl = (count, getQuestionAnswer) => {
   if (count === 0) {
-    console.log(`Congratulations, ${name}!`);
-    return;
+    return true;
   }
   const [question, correctAnswer] = getQuestionAnswer();
   console.log(`Question: ${question}`);
@@ -13,11 +12,11 @@ const makeGameLvl = (count, name, getQuestionAnswer) => {
   if (correctAnswer === answer) {
     const newCount = count - 1;
     console.log('Correct!');
-    makeGameLvl(newCount, name, getQuestionAnswer);
-    return;
+    makeGameLvl(newCount, getQuestionAnswer);
+    return true;
   }
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-  console.log(`Let's try again, ${name}!`);
+  return false;
 };
 
 const makeGame = (description, questionAnswer) => {
@@ -25,7 +24,8 @@ const makeGame = (description, questionAnswer) => {
   console.log(`${description}\n`);
   const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
   console.log(`Hello, ${gamerName} !\n`);
-  return makeGameLvl(levelsCount, gamerName, questionAnswer);
+  return makeGameLvl(levelsCount, questionAnswer) ? console.log(`Congratulations, ${gamerName}!`)
+    : console.log(`Let's try again, ${gamerName}!`);
 };
 
 export default makeGame;
