@@ -6,13 +6,12 @@ const description = 'Balance the given number.';
 const makeBalance = (number) => {
   const numsInNumber = String(number).split('');
   const numsInNumberSum = numsInNumber.reduce((acc, num) => acc + Number(num), 0);
-  let remainder = numsInNumberSum % numsInNumber.length;
+  const remainder = numsInNumberSum % numsInNumber.length;
   const avgNum = (numsInNumberSum - remainder) / numsInNumber.length;
   const numFromAvgNums = numsInNumber.map(() => avgNum);
 
-  const balancedNum = numFromAvgNums.reduce((acc, num) => {
-    const newNum = remainder > 0 ? num + 1 : num;
-    remainder -= 1;
+  const balancedNum = numFromAvgNums.reduce((acc, num, i) => {
+    const newNum = remainder > i ? num + 1 : num;
     return newNum + acc;
   }, '');
   return balancedNum;
