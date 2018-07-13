@@ -6,7 +6,9 @@ const makeGameLvl = (count, getQuestionAnswer) => {
   if (count === 0) {
     return true;
   }
-  const [question, correctAnswer] = getQuestionAnswer();
+  const questionAnswer = getQuestionAnswer();
+  const question = questionAnswer[0];
+  const correctAnswer = questionAnswer[1];
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   if (correctAnswer === answer) {
@@ -23,8 +25,8 @@ const makeGame = (description, questionAnswer) => {
   console.log(`${description}\n`);
   const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
   console.log(`Hello, ${gamerName} !\n`);
-  return makeGameLvl(levelsCount, questionAnswer) ? console.log(`Congratulations, ${gamerName}!`)
-    : console.log(`Let's try again, ${gamerName}!`);
+  console.log(makeGameLvl(levelsCount, questionAnswer) ? `Congratulations, ${gamerName}!`
+    : `Let's try again, ${gamerName}!`);
 };
 
 export default makeGame;

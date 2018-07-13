@@ -5,7 +5,8 @@ const description = 'What is the result of the expression?';
 const calcAmplitude = 4;
 
 const makeQuestionAnswer = () => {
-  const [x, y] = [getRandomNum(), getRandomNum()];
+  const x = getRandomNum();
+  const y = getRandomNum();
   switch (getRandomNum(undefined, calcAmplitude)) {
     case 1:
       return [`${x} + ${y}`, String(x + y)];

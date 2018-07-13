@@ -22,7 +22,8 @@ const makeProgression = () => {
 const makeQuestionAnswer = () => {
   const newProgression = makeProgression();
   const position = getRandomNum(0, progressionSize);
-  const rigthAnswer = String(newProgression.splice(position, 1, '..'));
+  const rigthAnswer = String(newProgression[position]);
+  newProgression.splice(position, 1, '..');
   const question = `${newProgression}`;
   return [question, rigthAnswer];
 };

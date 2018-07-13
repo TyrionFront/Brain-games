@@ -12,7 +12,8 @@ const calcGcd = (a, b) => {
 };
 
 const makeQuestionAnswer = () => {
-  const [x, y] = [getRandomNum(), getRandomNum()];
+  const x = getRandomNum();
+  const y = getRandomNum();
   const question = `${x} ${y}`;
   return [question, String(calcGcd(x, y))];
 };
