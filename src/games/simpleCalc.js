@@ -2,11 +2,11 @@ import makeGame from '../gameEngine';
 import getRandomNum from '../utils';
 
 const description = 'What is the result of the expression?';
-const calcAmplitude = 3;
+const calcAmplitude = 4;
 
 const makeQuestionAnswer = () => {
   const [x, y] = [getRandomNum(), getRandomNum()];
-  switch (getRandomNum(calcAmplitude)) {
+  switch (getRandomNum(undefined, calcAmplitude)) {
     case 1:
       return [`${x} + ${y}`, String(x + y)];
     case 2:

@@ -12,8 +12,7 @@ const makeGameLvl = (count, getQuestionAnswer) => {
   if (correctAnswer === answer) {
     const newCount = count - 1;
     console.log('Correct!');
-    makeGameLvl(newCount, getQuestionAnswer);
-    return true;
+    return makeGameLvl(newCount, getQuestionAnswer);
   }
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctAnswer}.`);
   return false;
