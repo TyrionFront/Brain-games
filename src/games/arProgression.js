@@ -4,13 +4,10 @@ import getRandomNum from '../utils';
 const description = 'What value is missing in this progression?';
 
 const progressionSize = 10;
-const startAmplitude = 1000;
-const progressionStart = () => getRandomNum(undefined, startAmplitude);
-const progressionStep = () => getRandomNum();
 
 const makeProgression = () => {
-  const start = progressionStart();
-  const step = progressionStep();
+  const start = getRandomNum();
+  const step = getRandomNum();
 
   const iter = (res, count) => {
     if (count === progressionSize) { return res; }
