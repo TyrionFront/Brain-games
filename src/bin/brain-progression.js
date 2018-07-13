@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import arProgression from '../games/arProgression';
+import progression from '../games/arithmeticProgression';
 
-arProgression();
+progression();
