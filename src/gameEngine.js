@@ -6,9 +6,7 @@ const makeGameLvl = (count, getQuestionAnswer) => {
   if (count === 0) {
     return true;
   }
-  const questionAnswer = getQuestionAnswer();
-  const question = questionAnswer[0];
-  const correctAnswer = questionAnswer[1];
+  const [question, correctAnswer] = getQuestionAnswer();
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   if (correctAnswer === answer) {
