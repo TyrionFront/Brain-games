@@ -6,7 +6,7 @@ const startNum = 1;
 
 const hasNumber = (num, arr) => arr.includes(num);
 
-const makeNumbersRange = size => new Array(size).fill(startNum)
+const makeNumbersRange = size => new Array(size).fill(1)
   .map((number, i) => {
     const newNumber = number + i;
     return newNumber;
