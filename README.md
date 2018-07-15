@@ -131,7 +131,7 @@ Each game launches by its name and have its own "question":
   ```
 <h2>Prerequisites</h2>
 
-To be able to install & run **brain-games** [npm](https://www.npmjs.com/get-npm) must be installed on your computer.
+To be able to install & run **brain-games** the [npm](https://www.npmjs.com/get-npm) must be installed on your computer.
 
 <h2>Installation</h2>
 
