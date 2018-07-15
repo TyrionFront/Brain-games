@@ -28,7 +28,7 @@ All of them have next **common logic**:
 
      `Question: 15`
      
-   If yout answer is correct
+   If your answer is correct
    
      `Your answer: no`,
      
@@ -68,7 +68,8 @@ Each game launches by its name and have its own "question":
   In this game You need to calculate missed [arithmetic progression](https://en.wikipedia.org/wiki/Arithmetic_progression) value: 
   
   ```$ brain-progression```
-  ```Question: 7,79,..,223,295,367,439,511,583,655
+  ```
+  Question: 7,79,..,223,295,367,439,511,583,655
   Your answer: 151
   Correct!
   Question: 65,160,..,350,445,540,635,730,825,920
@@ -95,7 +96,8 @@ Each game launches by its name and have its own "question":
   In this game You will get two numbers and You'll have to calculate their [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor):
   
   ```$ brain-gcd```
-  ```Question: 8 24
+  ```
+  Question: 8 24
   Your answer: 8
   Correct!
   Question: 8 55
@@ -107,7 +109,8 @@ Each game launches by its name and have its own "question":
   Adding, subtraction or multiplication of two values:
   
   ```$ brain-calc```
-  ```Question: 71 + 56
+  ```
+  Question: 71 + 56
   Your answer: 127
   Correct!
   Question: 22 - 70
@@ -119,7 +122,8 @@ Each game launches by its name and have its own "question":
   Here You need to answer whether a given number is even or not:
   
   ```$ brain-even```
-  ```Question: 68
+  ```
+  Question: 68
   Your answer: yes
   Correct!
   Question: 26
