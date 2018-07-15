@@ -11,7 +11,7 @@ const isPrime = (number) => {
     if (counter > noReminderCount) { return false; }
     if (number > divider) {
       const newDivider = divider + 1;
-      const newCounter = number % divider === 0 ? counter + 1 : counter; 
+      const newCounter = number % divider === 0 ? counter + 1 : counter;
       return iter(newDivider, newCounter);
     }
     return true;
