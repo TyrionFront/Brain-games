@@ -6,7 +6,7 @@
 
 (First start in package making & publishing)
 
-**Project is made during study the web-dev on [Hexlet](https://ru.hexlet.io/).**
+**Project is made during studying the web-dev on [Hexlet](https://ru.hexlet.io/).**
 
 It includes **6 simple math games** to be launched as console applications.
 All of them have next **common logic**:
