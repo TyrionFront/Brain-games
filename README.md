@@ -79,7 +79,7 @@ Each game launches by its name and have its own "question":
 * **brain-balance**
 
   You have a number which you need to "balance": balanced number is a number where numerals differ from each other by 1 or
-  are equal: 44477, 2233, 56, 777 etc. So if You got, for example, **4181** your answer should be **3344** and so on:
+  are equal: 4455, 2233, 56, 777 etc. So if You got, for example, **4181** your answer should be **3344** and so on:
   
   ```$ brain-balance```
   
