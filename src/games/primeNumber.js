@@ -6,13 +6,17 @@ const description = 'Is this number prime?';
 const isPrime = (number) => {
   if (number < 2) { return false; }
   const startDivider = 2;
-  const iter = (divider) => {
-    if (number === divider) { return true; }
-    if (number % divider === 0) { return false; }
-    const newDivider = divider + 1;
-    return iter(newDivider);
+  const noReminderCount = 1;
+  const iter = (divider, counter) => {
+    if (counter > noReminderCount) { return false; }
+    if (number > divider) {
+      const newDivider = divider + 1;
+      const newCounter = number % divider === 0 ? counter + 1 : counter; 
+      return iter(newDivider, newCounter);
+    }
+    return true;
   };
-  return iter(startDivider);
+  return iter(startDivider, noReminderCount);
 };
 
 const makeQuestionAnswer = () => {
