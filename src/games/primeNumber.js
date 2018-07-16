@@ -7,12 +7,11 @@ const isPrime = (number) => {
   if (number < 2) { return false; }
   const startDivider = 2;
   const iter = (divider) => {
-    if (number % divider === 0) { return false; }
-    if (divider <= Math.sqrt(number)) {
-      const newDivider = divider + 1;
-      return iter(newDivider);
+    if (divider > Math.sqrt(number)) {
+      return true;
     }
-    return true;
+    if (number % divider === 0) { return false; }
+    return iter(divider + 1);
   };
   return iter(startDivider);
 };
