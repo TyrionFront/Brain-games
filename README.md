@@ -1,6 +1,6 @@
 <h1>brain-games</h1>
 
-<a href="https://codeclimate.com/github/TyrionFront/project-lvl1-s304/maintainability"><img src="https://api.codeclimate.com/v1/badges/48c4404a15984e14868f/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/83a1b82d7f43d2364499/maintainability)](https://codeclimate.com/github/TyrionFront/Brain-games/maintainability)
 [![Build Status](https://travis-ci.org/TyrionFront/project-lvl1-s304.svg?branch=master)](https://travis-ci.org/TyrionFront/project-lvl1-s304)
 
 (First start in package making & publishing)
