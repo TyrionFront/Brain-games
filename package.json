@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TyrionFront/project-lvl1-s304.git"
+    "url": "https://github.com/TyrionFront/Brain-games.git"
   },
   "keywords": [
     "brain"
@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/TyrionFront/project-lvl1-s304#readme",
   "devDependencies": {
+    "@types/readline-sync": "^1.4.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
