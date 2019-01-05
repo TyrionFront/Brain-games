@@ -12,7 +12,7 @@ const games = [makeBalance, simpleCalculator, isEven, GCDgame, primeNumber, prog
 const gameStart = () => {
   const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
   console.log(`Hello, ${gamerName} !\n`);
-  const gameIndex = readlineSync.keyInSelect(gameNames, 'Choose a game from the list above:  ');
+  const gameIndex = readlineSync.keyInSelect(gameNames, 'Choose a game number from the list above:  ');
 
   return gameIndex !== -1 ? [games[gameIndex], gamerName]
     : [str => console.log(str), `C U next time ! Good luck, ${gamerName}`];
