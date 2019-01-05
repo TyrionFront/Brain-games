@@ -18,8 +18,8 @@ const isPrime = (number) => {
 
 const makeQuestionAnswer = () => {
   const question = getRandomNum();
-  const rigthAnswer = isPrime(question) ? 'yes' : 'no';
-  return [question, rigthAnswer];
+  const rightAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, rightAnswer];
 };
 
 export default () => makeGame(description, makeQuestionAnswer);
