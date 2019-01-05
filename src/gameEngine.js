@@ -18,11 +18,8 @@ const makeGameLvl = (count, getQuestionAnswer) => {
   return false;
 };
 
-const makeGame = (description, questionAnswer) => {
-  console.log('Welcome to the Brain Games!');
+const makeGame = (description, questionAnswer, gamerName) => {
   console.log(`${description}\n`);
-  const gamerName = readlineSync.question('What\'s Ur name, dear guest ?: ');
-  console.log(`Hello, ${gamerName} !\n`);
   console.log(makeGameLvl(levelsCount, questionAnswer) ? `Congratulations, ${gamerName}!`
     : `Let's try again, ${gamerName}!`);
 };

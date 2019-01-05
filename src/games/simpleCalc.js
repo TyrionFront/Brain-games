@@ -20,4 +20,4 @@ const makeQuestionAnswer = () => {
   return null;
 };
 
-export default () => makeGame(description, makeQuestionAnswer);
+export default gamerName => makeGame(description, makeQuestionAnswer, gamerName);

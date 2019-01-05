@@ -22,10 +22,10 @@ const makeProgression = () => {
 const makeQuestionAnswer = () => {
   const newProgression = makeProgression();
   const position = getRandomNum(0, progressionSize);
-  const rigthAnswer = String(newProgression[position]);
+  const rightAnswer = String(newProgression[position]);
   newProgression.splice(position, 1, '..');
   const question = `${newProgression}`;
-  return [question, rigthAnswer];
+  return [question, rightAnswer];
 };
 
-export default () => makeGame(description, makeQuestionAnswer);
+export default gamerName => makeGame(description, makeQuestionAnswer, gamerName);

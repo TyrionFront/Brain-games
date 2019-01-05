@@ -12,4 +12,4 @@ const makeQuestionAnswer = () => {
   return [question, String(calcGcd(x, y))];
 };
 
-export default () => makeGame(description, makeQuestionAnswer);
+export default gamerName => makeGame(description, makeQuestionAnswer, gamerName);

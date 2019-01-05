@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import sayHi from '..';
+import gameStart from '..';
 
 console.log('Welcome to the Brain Games!');
-sayHi();
+const [game, gamer] = gameStart();
+
+game(gamer);
