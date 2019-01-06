@@ -8,13 +8,29 @@
 **Project is made during studying the web-dev on [Hexlet](https://ru.hexlet.io/?ref=50614).**
 
 It includes **6 simple math games** to be launched as console applications.
+To see all possible games to play You should just type _**brain-games**_ in your command-line. You'll see an invitation, name-input line and a games list with their ordinal numbers:  
+
+```Welcome to the Brain Games!```
+```
+What's Ur name, dear guest ?: zorro
+Hello, zorro !
+
+
+[1] makeBalance
+[2] simpleCalculator
+[3] isEven
+[4] GCDgame
+[5] primeNumber
+[6] progression
+[0] CANCEL
+
+Choose a game number from the list above [1...6 / 0]:
+```
+
+
 All of them have next **common logic**:
 
-**1)** after launching a game You have an invitation displayed:
-
-     `Welcome to the Brain Games!`
-  
-   with a following description of a sertain game (example):
+**1)** after launching a game a description of this game appears(example):
   
      `Is this number prime?`
      
