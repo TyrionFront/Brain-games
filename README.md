@@ -64,11 +64,10 @@ All of them have next **common logic**:
 
 Each game launches by its name and have its own "question":
 
-* **brain-prime**
+* **primeNumber**
 
   You need to define whether the displayed number is [prime](https://en.wikipedia.org/wiki/Prime_number) or not:  
   
-  ``` $ brain-prime```
   ```
   Question: 15
   Your answer: no
@@ -78,11 +77,10 @@ Each game launches by its name and have its own "question":
   ```
 
 
-* **brain-progression**
+* **progression**
 
   In this game You need to calculate missed [arithmetic progression](https://en.wikipedia.org/wiki/Arithmetic_progression) value: 
   
-  ```$ brain-progression```
   ```
   Question: 7,79,..,223,295,367,439,511,583,655
   Your answer: 151
@@ -92,12 +90,10 @@ Each game launches by its name and have its own "question":
   ```
   
   
-* **brain-balance**
+* **makeBalance**
 
   You have a number which you need to "balance": balanced number is a number where numerals differ from each other by 1 or
   are equal: 4455, 2233, 56, 777 etc. So if You got, for example, **4181** your answer should be **3344** and so on:
-  
-  ```$ brain-balance```
   
   ```
   Question: 1103
@@ -106,11 +102,10 @@ Each game launches by its name and have its own "question":
   Question: 9024
   ```
 
-* **brain-gcd**
+* **GCDgame**
 
   In this game You will get two numbers and You'll have to calculate their [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor):
   
-  ```$ brain-gcd```
   ```
   Question: 8 24
   Your answer: 8
@@ -119,11 +114,10 @@ Each game launches by its name and have its own "question":
   Your answer: 
   ```
 
-* **brain-calc**
+* **simpleCalculator**
 
   Adding, subtraction or multiplication of two values:
   
-  ```$ brain-calc```
   ```
   Question: 71 + 56
   Your answer: 127
@@ -132,11 +126,10 @@ Each game launches by its name and have its own "question":
   Your answer:
   ```
 
-* **brain-even**
+* **isEven**
 
   Here You need to answer whether a given number is even or not:
   
-  ```$ brain-even```
   ```
   Question: 68
   Your answer: yes
