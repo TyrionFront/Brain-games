@@ -1,6 +1,6 @@
 {
   "name": "numonebg",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "first project",
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",

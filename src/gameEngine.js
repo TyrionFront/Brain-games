@@ -19,7 +19,7 @@ const makeGameLvl = (count, getQuestionAnswer) => {
 };
 
 const makeGame = (description, questionAnswer, gamerName) => {
-  console.log(`${description}\n`);
+  console.log(`\n${description}\n`);
   console.log(makeGameLvl(levelsCount, questionAnswer) ? `Congratulations, ${gamerName}!`
     : `Let's try again, ${gamerName}!`);
 };
