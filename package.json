@@ -1,12 +1,12 @@
 {
   "name": "numonebg",
-  "version": "7.0.5",
+  "version": "7.0.8",
   "description": "first project",
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "babel-node": "babel-node",
     "eslint": "eslint",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "sudo npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -38,7 +38,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
